@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+import App, { Cobastate } from './App.jsx' // import App dan Cobastate dari file App.jsx
 
 import {
   createBrowserRouter,
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
     path: "/login", // URL untuk halaman login
     element: <App />
   },
+  {
+    path: "/cobastate", // URL untuk halaman cobastate
+    element: <Cobastate />
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
